@@ -10,4 +10,74 @@
 <body>
   <app-root></app-root>
 </body>
+<style>
+  /*css预定义*/
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    list-style: none;
+    -webkit-tap-highlight-color: rgba(255,255,255,0); /*ios和android下触摸元素时出现半透明灰色遮罩*/
+    -webkit-touch-callout: none; /*长时间按住页面出现闪退*/
+  }
+  html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6
+  {-webkit-text-size-adjust: 100%; /*旋转屏幕时，字体大小调整的问题*/
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;}
+  a:link, a:visited, a:active, a:hover{text-decoration: none;}
+  h1, h2, h3, h4, h5, h6, em, b, label, i, strong
+  {font-weight: normal;}
+  img{
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: block;}
+  button{
+    border: 0;
+    padding: 0px;
+    margin: 0px;
+    outline-style: none;
+    background-color: transparent;
+    -webkit-appearance: none;}
+  input, select, textarea
+  {
+    border: none;
+    outline: none;
+  }
+  ul{
+    line-style:none;
+    padding:0;
+    margin:0;
+  }
+  /*解决 苹果手机给input样式的修饰问题*/
+  input[type="text"], input[type="button"], input[type="submit"], input[type="reset"], input[type="password"], select, textarea
+  {
+    -webkit-appearance: none;
+    outline: none;
+    color:#666;
+    background:#f5f5f5;
+    border-radius:6px;
+    text-indent: 55px;
+  }
+  /* input textarea 的placeholder 样式 */
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #686868;
+  }
+  input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #686868;
+  }
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #686868;
+  }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #686868;
+  }
+  /*body的background-color是faf8fb*/
+  body{
+    background-color: #faf8fb;
+  }
+</style>
 </html>
