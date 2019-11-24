@@ -1,0 +1,16 @@
+.go-link{
+  position: absolute;
+  top: 100px;
+  width: 100px;
+  left: calc(50% - 50px);
+  height: 44px;
+  border-radius: 22px;
+  background-color: #65677e;
+  color: white;
+  font-size: 14px;
+  line-height: 44px;
+  text-align: center;
+  /*透明度和阴影*/
+  box-shadow: 0 3px 6px #65677e;
+  opacity: 0.9;
+}

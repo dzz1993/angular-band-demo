@@ -1,14 +1,14 @@
 <div id="consume">
-  <img alt="icon-wine" class="img" src="../../../assets/image/icon-wine.png"/>
+  <img alt="icon-wine" class="img" [src]="consume_item.pic"/>
   <div class="middle">
-    <p class="first-line">支付宝-某某消费(北京)有限公司</p>
-    <p class="second-line">零食烟酒 信用卡2233 09:12:12</p>
+    <p class="first-line">{{consume_item.position}}</p>
+    <p class="second-line">{{consume_item.detail}}</p>
   </div>
   <div class="right">
     <div class="first-line flex-row">
-      <div class="in-flag">未入账</div>
-      <p class="number">￥23.23</p>
+      <div class="in-flag" *ngIf="consume_item.flag">未入账</div>
+      <p class="number">￥{{consume_item.consume_amount}}</p>
     </div>
-    <p class="second-line go-right">余额:￥222288.20</p>
+    <p class="second-line go-right">余额:￥{{consume_item.balance}}</p>
   </div>
 </div>

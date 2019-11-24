@@ -37,11 +37,13 @@ body{
 .right{
   display: flex;
   flex-direction: column;
+  width: calc(50% - 30px);
   /*align-items: baseline;*/
 }
 .flex-row{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 .in-flag{
   width:68px;
@@ -53,6 +55,7 @@ body{
   /*为保证高版本兼容，解决高版本chrome不支持12px以下字体只能采用缩放*/
   /*-webkit-transform-origin-x: 0;*/
   -webkit-transform: scale(0.5);
+  transform: scale(0.5);
   text-align: center;
   line-height: 24px;
 }

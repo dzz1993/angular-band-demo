@@ -1,41 +1,6 @@
 <div id="header">
-  <img src="../../../assets/image/icon_back.png" alt="返回" class="go-back"/>
-  <p class="title">收支</p>
-  <img src="../../../assets/image/icon_massage.png" alt="消息" class="ect"/>
-  <img src="../../../assets/image/icon_service.png" alt="客服" class="customer-service"/>
+  <img (click)="go_back()" src="assets/image/icon_back.png" alt="返回" class="go-back"/>
+  <p class="title">{{title}}</p>
+  <img src="assets/image/icon_massage.png" alt="消息" class="ect"/>
+  <img src="assets/image/icon_service.png" alt="客服" class="customer-service"/>
 </div>
-<style>
-  #header{
-    height: 44px;
-    background-color: #3b393c;
-    width: calc(100% - 40px);
-    padding: 0 20px;
-    position: fixed;
-  }
-  img{
-    width: 27px;
-    height: 27px;
-    margin-top: 8px;
-  }
-  .go-back{
-    float: left;
-  }
-  .title{
-    text-align: center;
-    line-height: 44px;
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    /*绝对定位的文字居中*/
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-  .ect {
-    float: right;
-  }
-  .customer-service{
-    float: right;
-    margin-right: 30px;
-  }
-</style>

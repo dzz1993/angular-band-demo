@@ -11,3 +11,29 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.top,.middle,.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.big{
+  font-size: 18px;
+}
+.inner-left,.inner-middle,.inner-right{
+  display: flex;
+  flex-direction: column;
+}
+.inner-img{
+  width: 20px;
+  height: 20px;
+}
+.inner-title{
+  line-height: 26px;
+  margin-left: 2px;
+}
+.inner-content{
+  line-height: 30px;
+}
+.go-budget{
+  margin-left: 12px;
+}
