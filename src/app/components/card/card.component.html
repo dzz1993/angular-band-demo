@@ -1,16 +1,16 @@
 <div id="card">
   <div class="top">
-    <div><span class="big">08</span>/2019</div>
-    <p>余额 ￥8888.88</p>
+    <div><span class="big">{{title.month}}</span>/{{title.year}}</div>
+    <p>余额 {{title.leave}}</p>
   </div>
   <div class="middle">
     <div class="inner-left">
       <p class="inner-title">支出</p>
-      <p class="inner-content big">￥18833.16</p>
+      <p class="inner-content big">{{title.out}}</p>
     </div>
     <div class="inner-middle">
       <p class="inner-title">收入</p>
-      <p class="inner-content big">￥18533.33</p>
+      <p class="inner-content big">{{title.in}}</p>
     </div>
     <div class="inner-right">
       <img class="inner-img" src="assets/image/detail.png" alt="详情"/>

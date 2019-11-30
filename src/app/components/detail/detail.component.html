@@ -13,7 +13,7 @@
 </div>
 <!--卡片-->
 <div class="card">
-  <app-card></app-card>
+  <app-card [title]="cardContent"></app-card>
 </div>
 <!--选项菜单，虽然是个模块但应该没有复用性，不抽离-->
 <div class="menu">
@@ -39,7 +39,7 @@
 <div class="consume-item" *ngFor = "let item of consume_detail">
   <div class="title">
     <p>{{item.title}}</p>
-    <p class="refresh" *ngIf="item.is_first" (click)="show()">刷新</p>
+    <p class="refresh" *ngIf="item.is_first" (click)="refresh()">刷新</p>
   </div>
   <app-consume-item  *ngFor="let consume_item of item.list" [consume_item]="consume_item"></app-consume-item>
 </div>
