@@ -1,17 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ConsumeItemComponent } from './components/consume-item/consume-item.component';
-import { CardComponent } from './components/card/card.component';
+import { ConsumeItemComponent } from './pages/detail/components/consume-item/consume-item.component';
+import { CardComponent } from './pages/detail/components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LoginComponent } from './components/login/login.component';
-import { DetailComponent } from './components/detail/detail.component';
-import { ToastrModule } from 'ngx-toastr';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { LoginComponent } from './pages/login/login.component';
+import { DetailComponent } from './pages/detail/detail.component';
+
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -23,12 +19,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     DetailComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ToastrModule.forRoot(),
-    BrowserAnimationsModule,
-    HttpClientModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

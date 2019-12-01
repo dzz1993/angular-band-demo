@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: calc(100% - 34px);
   height: calc((100vw - 34px) * 306 / 741);/*根据UI定宽高比*/
-  background: url("../../../assets/image/card-background.png");
+  background: url("../../../../../assets/image/card-background.png");
   background-size: 100% 100%;
   padding: 17px;
   color: white;

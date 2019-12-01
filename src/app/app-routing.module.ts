@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // 引入components
-import {LoginComponent} from './components/login/login.component';
-import {DetailComponent} from './components/detail/detail.component';
+import {LoginComponent} from './pages/login/login.component';
+import {DetailComponent} from './pages/detail/detail.component';
 
 
 
